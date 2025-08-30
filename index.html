@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fatih Hoca - Eğitim Merkezi</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+
+.gradient-bg {
+
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+}
+
+.card-hover {
+
+transition: all 0.3s ease;
+
+}
+
+.card-hover:hover {
+
+transform: translateY(-5px);
+
+box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+
+}
+
+.fade-in {
+
+animation: fadeIn 0.6s ease-in;
+
+}
+
+@keyframes fadeIn {
+
+from { opacity: 0; transform: translateY(20px); }
+
+to { opacity: 1; transform: translateY(0); }
+
+}
+
+</style>
+
+</head>
+
+<body class="bg-gray-50 font-sans">
+
+<!-- Navigation -->
+
+<nav class="gradient-bg shadow-lg sticky top-0 z-50">
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+<div class="flex justify-between items-center py-4">
+
+<div class="flex items-center">
+
+<div class="bg-white rounded-full p-2 mr-3">
+
+<span class="text-2xl">👨‍🏫</span>
+
+</div>
+
+<h1 class="text-white text-2xl font-bold">Fatih Hoca</h1>
+
+</div>
+
+<div class="hidden md:flex space-x-6">
+
+<button onclick="showPage('home')" class="nav-btn text-white hover:text-blue-200 px-4 py-2 rounded-lg transition-colors">Ana Sayfa</button>
+
+<button onclick="showPage('downloads')" class="nav-btn text-white hover:text-blue-200 px-4 py-2 rounded-lg transition-colors">Dosyalar</button>
+
+<button onclick="showPage('contact')" class="nav-btn text-white hover:text-blue-200 px-4 py-2 rounded-lg transition-colors">İletişim</button>
+
+</div>
+
+<div class="md:hidden">
+
+<button onclick="toggleMobileMenu()" class="text-white">
+
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+
+</svg>
+
+</button>
+
+</div>
+
+</div>
+
+<div id="mobileMenu" class="hidden md:hidden pb-4">
+
+<button onclick="showPage('home')" class="block text-white hover:text-blue-200 px-4 py-2 w-full text-left">Ana Sayfa</button>
+
+<button onclick="showPage('downloads')" class="block text-white hover:text-blue-200 px-4 py-2 w-full text-left">Dosyalar</button>
+
+<button onclick="showPage('contact')" class="block text-white hover:text-blue-200 px-4 py-2 w-full text-left">İletişim</button>
+
+</div>
+
+</div>
+
+</nav>
+
+
+
+<!-- Ana Sayfa -->
+
+<div id="homePage" class="page-content">
+
+<!-- Hero Section -->
+
+<section class="gradient-bg text-white py-20">
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+<div class="fade-in">
+
+<div class="mb-8">
+
+<div class="bg-white rounded-full p-6 inline-block mb-6">
+
+<span class="text-6xl">👨‍🏫</span>
+
+</div>
+
+</div>
+
+<h1 class="text-5xl font-bold mb-6">Fatih Hoca</h1>
+
+<p class="text-xl mb-8 max-w-3xl mx-auto">Profesyonel eğitim deneyimi ile muhasebe, emlak danışmanlığı ve daha birçok alanda kaliteli eğitim hizmetleri sunuyorum.</p>
+
+<button onclick="scrollToSection('courses')" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors">Kursları İncele</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- Hakkımda -->
+
+<section class="py-16 bg-white">
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+<div class="text-center mb-12">
+
+<h2 class="text-4xl font-bold text-gray-800 mb-4">Hakkımda</h2>
+
+<div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+
+</div>
+
+<div class="grid md:grid-cols-2 gap-12 items-center">
+
+<div>
+
+<div class="bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl p-8 text-center">
+
+<span class="text-8xl mb-4 block">👨‍💼</span>
+
+<h3 class="text-2xl font-bold text-gray-800">Deneyimli Eğitmen</h3>
+
+</div>
+
+</div>
+
+<div class="space-y-6">
+
+<h3 class="text-2xl font-bold text-gray-800">Merhaba, Ben Fatih Hoca</h3>
+
+<p class="text-gray-600 leading-relaxed">
+
+15 yılı aşkın eğitim deneyimim ile öğrencilerime en kaliteli eğitimi sunmaya odaklanıyorum.
+
+Muhasebe, emlak danışmanlığı ve birçok farklı alanda uzmanlaşmış bir eğitmenin.
+
+</p>
+
+<p class="text-gray-600 leading-relaxed">
+
+Amacım, öğrencilerimin teorik bilgiyi pratikte uygulayabilmelerini sağlamak ve
+
+kariyerlerinde başarılı olmalarına katkıda bulunmaktır.
+
+</p>
+
+<div class="flex flex-wrap gap-3">
+
+<span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">15+ Yıl Deneyim</span>
+
+<span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">1000+ Mezun</span>
+
+<span class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-medium">Sertifikalı Eğitmen</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- Kurslar -->
+
+<section id="courses" class="py-16 bg-gray-50">
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+<div class="text-center mb-12">
+
+<h2 class="text-4xl font-bold text-gray-800 mb-4">Kurslarım</h2>
+
+<div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+
+<p class="text-gray-600 max-w-2xl mx-auto">Profesyonel kariyerinizi geliştirmek için tasarlanmış kapsamlı kurs programları</p>
+
+</div>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<!-- Muhasebe Kursları -->
+
+<div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+
+<div class="bg-gradient-to-r from-blue-500 to-blue-600 p-6 text-center">
+
+<span class="text-5xl mb-4 block">📊</span>
+
+<h3 class="text-2xl font-bold text-white">Muhasebe Kursları</h3>
+
+</div>
+
+<div class="p-6">
+
+<ul class="space-y-3 mb-6">
+
+<li class="flex items-center text-gray-600">
+
+<span class="text-green-500 mr-2">✓</span>
+
+Temel Muhasebe Prensipleri
+
+</li>
+
+<li class="flex items-center text-gray-600">
+
+<span class="text-green-500 mr-2">✓</span>
+
+Mali Tablolar Analizi
+
+</li>
+
+<li class="flex items-center text-gray-600">
+
+<span class="text-green-500 mr-2">✓</span>
+
+Vergi Mevzuatı
+
+</li>
+
+<li class="flex items-center text-gray-600">
+
+<span class="text-green-500 mr-2">✓</span>
+
+Muhasebe Programları
+
+</li>
+
+</ul>
+
+<button onclick="showPage('downloads')" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold">Dosyaları İncele</button>
+
+</div>
+
+</div>
+
+
+
+<!-- Emlak Danışmanlığı -->
+
+<div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+
+<div class="bg-gradient-to-r from-green-500 to-green-600 p-6 text-center">
+
+<span class="text-5xl mb-4 block">🏠</span>
+
+<h3 class="text-2xl font-bold text-white">Emlak Danışmanlığı</h3>
+
+</div>
+
+<div class="p-6">
+
+<ul class="space-y-3 mb-6">
+
+<li class="flex items-center text-gray-600">
+
+<span class="text-green-500 mr-2">✓</span>
+
+Emlak Mevzuatı
+
+</li>
+
+<li class="flex items-center text-gray-600">
+
+<span class="text-green-500 mr-2">✓</span>
+
+Değerleme Teknikleri
+
+</li>
+
+<li class="flex items-center text-gray-600">
+
+<span class="text-green-500 mr-2">✓</span>
+
+Satış Teknikleri
+
+</li>
+
+<li class="flex items-center text-gray-600">
+
+<span class="text-green-500 mr-2">✓</span>
+
+Müşteri İlişkileri
+
+</li>
+
+</ul>
+
+<button onclick="showPage('downloads')" class="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition-colors font-semibold">Dosyaları İncele</button>
+
+</div>
+
+</div>
+
+
+
+<!-- Diğer Kurslar -->
+
+<div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+
+<div class="bg-gradient-to-r from-purple-500 to-purple-600 p-6 text-center">
+
+<span class="text-5xl mb-4 block">🎓</span>
+
+<h3 class="text-2xl font-bold text-white">Diğer Kurslar</h3>
+
+</div>
+
+<div class="p-6">
+
+<ul class="space-y-3 mb-6">
+
+<li class="flex items-center text-gray-600">
+
+<span class="text-green-500 mr-2">✓</span>
+
+İş Geliştirme
+
+</li>
+
+<li class="flex items-center text-gray-600">
+
+<span class="text-green-500 mr-2">✓</span>
+
+Girişimcilik
+
+</li>
+
+<li class="flex items-center text-gray-600">
+
+<span class="text-green-500 mr-2">✓</span>
+
+Dijital Pazarlama
+
+</li>
+
+<li class="flex items-center text-gray-600">
+
+<span class="text-green-500 mr-2">✓</span>
+
+Kişisel Gelişim
+
+</li>
+
+</ul>
+
+<button onclick="showPage('downloads')" class="w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition-colors font-semibold">Dosyaları İncele</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- İstatistikler -->
+
+<section class="py-16 gradient-bg text-white">
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+<div class="grid md:grid-cols-4 gap-8 text-center">
+
+<div>
+
+<div class="text-4xl font-bold mb-2">15+</div>
+
+<div class="text-blue-200">Yıl Deneyim</div>
+
+</div>
+
+<div>
+
+<div class="text-4xl font-bold mb-2">1000+</div>
+
+<div class="text-blue-200">Mezun Öğrenci</div>
+
+</div>
+
+<div>
+
+<div class="text-4xl font-bold mb-2">50+</div>
+
+<div class="text-blue-200">Farklı Kurs</div>
+
+</div>
+
+<div>
+
+<div class="text-4xl font-bold mb-2">%98</div>
+
+<div class="text-blue-200">Memnuniyet Oranı</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+
+
+<!-- Dosyalar Sayfası -->
+
+<div id="downloadsPage" class="page-content hidden">
+
+<section class="py-16 bg-gray-50 min-h-screen">
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+<div class="text-center mb-12">
+
+<h2 class="text-4xl font-bold text-gray-800 mb-4">Kurs Dosyaları ve Programları</h2>
+
+<div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+
+<p class="text-gray-600 max-w-2xl mx-auto">Kurslarımıza ait dökümanları ve programları buradan indirebilirsiniz</p>
+
+</div>
+
+
+
+<!-- Muhasebe Kursları Dosyaları -->
+
+<div class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+
+<div class="flex items-center mb-6">
+
+<span class="text-4xl mr-4">📊</span>
+
+<h3 class="text-2xl font-bold text-gray-800">Muhasebe Kursları</h3>
+
+</div>
+
+<div class="grid md:grid-cols-2 gap-6">
+
+<div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+
+<div class="flex items-center justify-between">
+
+<div>
+
+<h4 class="font-semibold text-gray-800 mb-2">Temel Muhasebe Ders Notları</h4>
+
+<p class="text-gray-600 text-sm">PDF • 2.5 MB</p>
+
+</div>
+
+<button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium">
+
+📥 İndir
+
+</button>
+
+</div>
+
+</div>
+
+<div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+
+<div class="flex items-center justify-between">
+
+<div>
+
+<h4 class="font-semibold text-gray-800 mb-2">Mali Tablolar Şablonları</h4>
+
+<p class="text-gray-600 text-sm">Excel • 1.8 MB</p>
+
+</div>
+
+<button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium">
+
+📥 İndir
+
+</button>
+
+</div>
+
+</div>
+
+<div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+
+<div class="flex items-center justify-between">
+
+<div>
+
+<h4 class="font-semibold text-gray-800 mb-2">Vergi Mevzuatı Rehberi</h4>
+
+<p class="text-gray-600 text-sm">PDF • 3.2 MB</p>
+
+</div>
+
+<button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium">
+
+📥 İndir
+
+</button>
+
+</div>
+
+</div>
+
+<div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+
+<div class="flex items-center justify-between">
+
+<div>
+
+<h4 class="font-semibold text-gray-800 mb-2">Muhasebe Programı Kurulumu</h4>
+
+<p class="text-gray-600 text-sm">EXE • 45 MB</p>
+
+</div>
+
+<button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium">
+
+📥 İndir
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- Emlak Danışmanlığı Dosyaları -->
+
+<div class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+
+<div class="flex items-center mb-6">
+
+<span class="text-4xl mr-4">🏠</span>
+
+<h3 class="text-2xl font-bold text-gray-800">Emlak Danışmanlığı</h3>
+
+</div>
+
+<div class="grid md:grid-cols-2 gap-6">
+
+<div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+
+<div class="flex items-center justify-between">
+
+<div>
+
+<h4 class="font-semibold text-gray-800 mb-2">Emlak Mevzuatı Kitabı</h4>
+
+<p class="text-gray-600 text-sm">PDF • 4.1 MB</p>
+
+</div>
+
+<button class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors text-sm font-medium">
+
+📥 İndir
+
+</button>
+
+</div>
+
+</div>
+
+<div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+
+<div class="flex items-center justify-between">
+
+<div>
+
+<h4 class="font-semibold text-gray-800 mb-2">Değerleme Hesap Tabloları</h4>
+
+<p class="text-gray-600 text-sm">Excel • 2.3 MB</p>
+
+</div>
+
+<button class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors text-sm font-medium">
+
+📥 İndir
+
+</button>
+
+</div>
+
+</div>
+
+<div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+
+<div class="flex items-center justify-between">
+
+<div>
+
+<h4 class="font-semibold text-gray-800 mb-2">Satış Sözleşmesi Şablonları</h4>
+
+<p class="text-gray-600 text-sm">Word • 1.5 MB</p>
+
+</div>
+
+<button class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors text-sm font-medium">
+
+📥 İndir
+
+</button>
+
+</div>
+
+</div>
+
+<div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+
+<div class="flex items-center justify-between">
+
+<div>
+
+<h4 class="font-semibold text-gray-800 mb-2">CRM Programı</h4>
+
+<p class="text-gray-600 text-sm">EXE • 28 MB</p>
+
+</div>
+
+<button class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors text-sm font-medium">
+
+📥 İndir
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- Diğer Kurslar Dosyaları -->
+
+<div class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+
+<div class="flex items-center mb-6">
+
+<span class="text-4xl mr-4">🎓</span>
+
+<h3 class="text-2xl font-bold text-gray-800">Diğer Kurslar</h3>
+
+</div>
+
+<div class="grid md:grid-cols-2 gap-6">
+
+<div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+
+<div class="flex items-center justify-between">
+
+<div>
+
+<h4 class="font-semibold text-gray-800 mb-2">İş Geliştirme Stratejileri</h4>
+
+<p class="text-gray-600 text-sm">PDF • 2.8 MB</p>
+
+</div>
+
+<button class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors text-sm font-medium">
+
+📥 İndir
+
+</button>
+
+</div>
+
+</div>
+
+<div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+
+<div class="flex items-center justify-between">
+
+<div>
+
+<h4 class="font-semibold text-gray-800 mb-2">Girişimcilik Rehberi</h4>
+
+<p class="text-gray-600 text-sm">PDF • 3.5 MB</p>
+
+</div>
+
+<button class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors text-sm font-medium">
+
+📥 İndir
+
+</button>
+
+</div>
+
+</div>
+
+<div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+
+<div class="flex items-center justify-between">
+
+<div>
+
+<h4 class="font-semibold text-gray-800 mb-2">Dijital Pazarlama Araçları</h4>
+
+<p class="text-gray-600 text-sm">ZIP • 15 MB</p>
+
+</div>
+
+<button class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors text-sm font-medium">
+
+📥 İndir
+
+</button>
+
+</div>
+
+</div>
+
+<div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+
+<div class="flex items-center justify-between">
+
+<div>
+
+<h4 class="font-semibold text-gray-800 mb-2">Kişisel Gelişim Videoları</h4>
+
+<p class="text-gray-600 text-sm">MP4 • 120 MB</p>
+
+</div>
+
+<button class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors text-sm font-medium">
+
+📥 İndir
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="text-center">
+
+<button onclick="showPage('home')" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold">
+
+← Ana Sayfaya Dön
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+
+
+<!-- İletişim Sayfası -->
+
+<div id="contactPage" class="page-content hidden">
+
+<section class="py-16 bg-gray-50 min-h-screen">
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+<div class="text-center mb-12">
+
+<h2 class="text-4xl font-bold text-gray-800 mb-4">İletişim</h2>
+
+<div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+
+<p class="text-gray-600 max-w-2xl mx-auto">Sorularınız için benimle iletişime geçebilirsiniz</p>
+
+</div>
+
+
+
+<div class="grid lg:grid-cols-2 gap-12">
+
+<!-- İletişim Bilgileri -->
+
+<div class="space-y-8">
+
+<div class="bg-white rounded-2xl shadow-lg p-8">
+
+<h3 class="text-2xl font-bold text-gray-800 mb-6">İletişim Bilgileri</h3>
+
+
+<div class="space-y-6">
+
+<div class="flex items-center">
+
+<div class="bg-blue-100 p-3 rounded-full mr-4">
+
+<span class="text-2xl">📧</span>
+
+</div>
+
+<div>
+
+<h4 class="font-semibold text-gray-800">E-posta</h4>
+
+<p class="text-gray-600">fatih.hoca@email.com</p>
+
+</div>
+
+</div>
+
+
+<div class="flex items-center">
+
+<div class="bg-green-100 p-3 rounded-full mr-4">
+
+<span class="text-2xl">📱</span>
+
+</div>
+
+<div>
+
+<h4 class="font-semibold text-gray-800">Telefon</h4>
+
+<p class="text-gray-600">+90 555 123 45 67</p>
+
+</div>
+
+</div>
+
+
+<div class="flex items-center">
+
+<div class="bg-purple-100 p-3 rounded-full mr-4">
+
+<span class="text-2xl">📍</span>
+
+</div>
+
+<div>
+
+<h4 class="font-semibold text-gray-800">Adres</h4>
+
+<p class="text-gray-600">Eğitim Merkezi Sokak No:123<br>Çankaya/Ankara</p>
+
+</div>
+
+</div>
+
+
+<div class="flex items-center">
+
+<div class="bg-yellow-100 p-3 rounded-full mr-4">
+
+<span class="text-2xl">🕒</span>
+
+</div>
+
+<div>
+
+<h4 class="font-semibold text-gray-800">Çalışma Saatleri</h4>
+
+<p class="text-gray-600">Pazartesi - Cuma: 09:00 - 18:00<br>Cumartesi: 09:00 - 15:00</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- Sosyal Medya -->
+
+<div class="bg-white rounded-2xl shadow-lg p-8">
+
+<h3 class="text-2xl font-bold text-gray-800 mb-6">Sosyal Medya</h3>
+
+<div class="flex space-x-4">
+
+<button class="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition-colors">
+
+<span class="text-xl">📘</span>
+
+</button>
+
+<button class="bg-blue-400 text-white p-3 rounded-full hover:bg-blue-500 transition-colors">
+
+<span class="text-xl">🐦</span>
+
+</button>
+
+<button class="bg-blue-700 text-white p-3 rounded-full hover:bg-blue-800 transition-colors">
+
+<span class="text-xl">💼</span>
+
+</button>
+
+<button class="bg-pink-600 text-white p-3 rounded-full hover:bg-pink-700 transition-colors">
+
+<span class="text-xl">📷</span>
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- İletişim Formu -->
+
+<div class="bg-white rounded-2xl shadow-lg p-8">
+
+<h3 class="text-2xl font-bold text-gray-800 mb-6">Mesaj Gönder</h3>
+
+<p class="text-sm text-gray-500 mb-6 bg-yellow-50 p-3 rounded-lg border border-yellow-200">
+
+<strong>Demo:</strong> Bu form örnek amaçlıdır. Gerçek mesaj gönderimi için backend entegrasyonu gereklidir.
+
+</p>
+
+<form class="space-y-6">
+
+<div class="grid md:grid-cols-2 gap-6">
+
+<div>
+
+<label class="block text-gray-700 font-semibold mb-2">Ad Soyad</label>
+
+<input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Adınızı yazın">
+
+</div>
+
+<div>
+
+<label class="block text-gray-700 font-semibold mb-2">E-posta</label>
+
+<input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="E-posta adresiniz">
+
+</div>
+
+</div>
+
+<div>
+
+<label class="block text-gray-700 font-semibold mb-2">Telefon</label>
+
+<input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Telefon numaranız">
+
+</div>
+
+<div>
+
+<label class="block text-gray-700 font-semibold mb-2">Konu</label>
+
+<select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+
+<option>Konu seçin</option>
+
+<option>Muhasebe Kursları</option>
+
+<option>Emlak Danışmanlığı</option>
+
+<option>Diğer Kurslar</option>
+
+<option>Genel Bilgi</option>
+
+</select>
+
+</div>
+
+<div>
+
+<label class="block text-gray-700 font-semibold mb-2">Mesajınız</label>
+
+<textarea rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Mesajınızı yazın..."></textarea>
+
+</div>
+
+<button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold">
+
+Mesaj Gönder
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+
+
+<div class="text-center mt-12">
+
+<button onclick="showPage('home')" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold">
+
+← Ana Sayfaya Dön
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+
+
+<!-- Footer -->
+
+<footer class="bg-gray-800 text-white py-8">
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+<div class="flex items-center justify-center mb-4">
+
+<div class="bg-white rounded-full p-2 mr-3">
+
+<span class="text-2xl">👨‍🏫</span>
+
+</div>
+
+<h3 class="text-xl font-bold">Fatih Hoca</h3>
+
+</div>
+
+<p class="text-gray-400 mb-4">Kaliteli eğitim, başarılı gelecek</p>
+
+<p class="text-gray-500 text-sm">© 2024 Fatih Hoca Eğitim Merkezi. Tüm hakları saklıdır.</p>
+
+</div>
+
+</footer>
+
+
+
+<script>
+
+// Sayfa geçiş fonksiyonu
+
+function showPage(pageId) {
+
+// Tüm sayfaları gizle
+
+document.querySelectorAll('.page-content').forEach(page => {
+
+page.classList.add('hidden');
+
+});
+
+
+// Seçilen sayfayı göster
+
+const targetPage = pageId + 'Page';
+
+document.getElementById(targetPage).classList.remove('hidden');
+
+
+// Sayfanın en üstüne scroll yap
+
+window.scrollTo(0, 0);
+
+
+// Mobil menüyü kapat
+
+document.getElementById('mobileMenu').classList.add('hidden');
+
+
+// Aktif nav butonunu güncelle
+
+document.querySelectorAll('.nav-btn').forEach(btn => {
+
+btn.classList.remove('bg-white', 'bg-opacity-20');
+
+});
+
+}
+
+
+
+// Mobil menü toggle
+
+function toggleMobileMenu() {
+
+const mobileMenu = document.getElementById('mobileMenu');
+
+mobileMenu.classList.toggle('hidden');
+
+}
+
+
+
+// Sayfa içi scroll fonksiyonu
+
+function scrollToSection(sectionId) {
+
+const element = document.getElementById(sectionId);
+
+if (element) {
+
+element.scrollIntoView({ behavior: 'smooth' });
+
+}
+
+}
+
+
+
+// Sayfa yüklendiğinde ana sayfayı göster
+
+document.addEventListener('DOMContentLoaded', function() {
+
+showPage('home');
+
+});
+
+
+
+// Form submit işlemi (demo)
+
+document.querySelector('form').addEventListener('submit', function(e) {
+
+e.preventDefault();
+
+alert('Demo: Mesajınız alındı! Gerçek uygulamada bu mesaj e-posta olarak gönderilecektir.');
+
+});
+
+
+
+// İndirme butonları (demo)
+
+document.addEventListener('click', function(e) {
+
+if (e.target.textContent.includes('İndir')) {
+
+e.preventDefault();
+
+alert('Demo: Dosya indirme işlemi! Gerçek uygulamada dosya indirilecektir.');
+
+}
+
+});
+
+</script>
+
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9773cb4d5435e1a1',t:'MTc1NjU1MTcyOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+</html>
